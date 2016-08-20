@@ -1,3 +1,270 @@
 <html>
-  <body>Hello World</body>
+	<head>
+		<style>
+			body {
+				background-color: #1d1d1d;
+				margin: 0;
+			}
+			span {
+				color: #e8e8e8;
+			}
+			#newsForm {
+				width: 500px;
+				margin: 0 auto;
+				font-size: 14px;
+			}
+			#newsForm, #header {
+				text-align: center;
+			}
+			#header {
+				margin-top: -2px;
+				font-size: 18px;
+				padding: 20px 0 20px 0;
+			}
+			#header span {
+				letter-spacing: 2px;
+			}
+			.newsItem {
+				margin: 0 auto;
+				margin-top: 10px;
+				width: 450px;
+				text-align: center;
+				background: #CC312F;
+				padding: 30px;
+				border-radius: 7px;
+				border: 0px;
+			}
+			.newsTitle {
+				font-weight: bold;
+			}
+			.newsBody {
+				text-align: left;
+			}
+			.timestamp::before {
+				Content: 'Posted on: ';
+			}
+			.timestamp {
+				text-align:right;
+				color: #FFC3C3;
+				font-size: 12px;
+			}
+			li {
+				text-align: left;
+				padding-top: 10px;
+				padding-down: 10px;
+			}
+		</style>
+		<script type="text/javascript" src="scripts/news.js?v=3.0.5782.0.126"></script>
+	</head>
+	<body>
+		<div id="newsForm">
+			<div class="newsItem">
+				<span class="newsTitle">Server Outages</span>
+				<p class="newsBody">You've probably noticed that we've been experiencing periodic downtime and slowness the past few days. We are still looking for the right solution for the old router's replacement. Thanks for your patience.</p>
+				<div class="timestamp">
+					&nbsp;08/20/16 - 03:04 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Server Back Online</span>
+				<p class="newsBody">We had some downtime due to a router malfunction. The router has now been replaced and we are back online. Thanks for understanding.</p>
+				<div class="timestamp">
+					&nbsp;08/17/16 - 06:36 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Unattended Server</span>
+				<p class="newsBody">The server will be unattended from today until Monday August 15. If there are any problems or the server goes offline, the issue will remain until then. Thanks for understanding.</p>
+				<div class="timestamp">
+					&nbsp;08/12/16 - 09:42 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Web UI Updates</span>
+				<p class="newsBody">We're always hard at work on new features and are constantly making changes to the website. Over the last month we've added a new <a href="http://www.kflixx.com/web/index.html?tab=8">Random</a> feature that allows users to find random content based on desired filters. The random feature also allows users to keep the random item in a separate list that you can use as a source list for the random item generator by adding multiple random items to it. You can add the same item multiple times in order to 'weight' it if you wish.</p>
+				<p class="newsBody">We have also updated the Watchlist feature so that we could bring back the Likes feature. You'll notice the Dislikes feature has been replaced with the Watchlist. Any existing Watchlist items will now appear as Liked items. You can find a list of your Liked items under the Favorites tab, and from here you can easily switch them back to Watchlist items by hovering over each one and marking it for the Watchlist like so:</p>
+				<img src="../files/watchlist.jpg">
+				<p class="newsBody">The home page has seen some updating as well; the Resume and Next Up sections have beem moved to the Resume tab in the navigation bar. The home screen now features latest items from all major content type libraries: Movies, TV, Music, Videos, Podcasts, Games and Comics.</p>
+				<p class="newsBody">Introducing the first custom view types which are available at the Season level. Users can now decide if they would like the episode listing to be displayed in a List or Tiles view type by using the icon as pictured:</p>
+				<img src="../files/viewtype.jpg">
+				<p class="newsBody">A smarter UI has also been implemented: the tab you last visited in the Movies and TV sections will now be remembered when you visit the website again (from the same device).</p>
+				<div class="timestamp">
+					&nbsp;08/04/16 - 04:46 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">New Playback Feature</span>
+				<p class="newsBody">Enjoy the "Play random unwatched episode" feature that can be found at the series level of any TV Show. Just browse to your favorite series, hit the Play button, and select "Play random unwatched episode" to build a randomly ordered playlist of episodes from the selected series that you haven't watched yet.</p>
+				<div class="timestamp">
+					&nbsp;07/08/16 - 04:11 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">New Feature: Watchlist</span>
+				<p class="newsBody">We have replaced the Like button with a Watch Later button that will add a show or movie to your Watchlist. You can open your Watchlist by navigating to it in the top nav bar from the home page. Use this to keep track of all the movies and series you want to watch but never have time to!</p>
+				<div class="timestamp">
+					&nbsp;07/04/16 - 03:39 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Web UI Update</span>
+				<p class="newsBody">If you haven't already noticed, we've been working on improving various aspects of the UI lately - mainly loading items that were previously opened in a separate browser tab right into the main kflixx UI. Navigating to News, Requests, Books and Comics will now load the content right in the page! Enjoy the changes as we continue to improve your experience.</p>
+				<div class="timestamp">
+					&nbsp;06/30/16 - 01:44 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Server Hardware Upgrade</span>
+				<p class="newsBody">The server will be offline until 5:00 PM EST at the earliest due to a hardware upgrade. We are adding a new RAID controller along with 3x2TB and 1x1.5TB new hard drives. Thanks for your patience.</p>
+				<div class="timestamp">
+					&nbsp;06/13/16 - 04:30 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Rebuilding TV Library</span>
+				<p class="newsBody">An unexpected issue caused the hard drive pool to go offline for a short period of time. During which, the server decided to scan and remove a lot of data from it's database thinking that the content was altered/removed. The library is re-scanning and should be fully re-populated by the end of the day. This problem could have been caused by a faulty hard drive, so we will be monitoring the issue closely in the near future so we can take the appropriate action if it occurs again. Thanks for understanding and we apologize for the inconvenience.</p>
+				<div class="timestamp">
+					&nbsp;06/09/16 - 03:54 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Updated Mobile Layout</span>
+				<p class="newsBody">We've updated the layout for mobile devices to make the browsing experience better. It should be much easier to navigate and view items now, and we will continue to improve the UI at various resolutions to ensure that every size is functional and visually appealing.</p>
+				<div class="timestamp">
+					&nbsp;06/08/16 - 04:27 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Updated Web Client</span>
+				<p class="newsBody">The home screen has been modified for all users to now show the following:</p>
+				<p class="newsBody"><ul>
+					<li>Library navigation</li>
+					<li>Resume</li>
+					<li>Next up episodes</li>
+					<li>Latest movies</li>
+					<li>Latest episodes</li>
+				</ul></p>
+				<p class="newsBody">The item details page has seen some work as well. When browsing a series or movie, you will see the item logo in the center of the header, and the clear art will slide into screen in the bottom right. When browsing a movie, the disc art will slide out of the poster and spin, and the director and writer will be listed.</p>
+				<div class="timestamp">
+					&nbsp;06/07/16 - 11:14 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Updated Web Player</span>
+				<p class="newsBody">The web player has been updated in the following ways:</p>
+				<p class="newsBody"><ul>
+					<li>When playing an episode in a series, the next episode will play automatically upon conclusion of the current episode.</li>
+					<li>Added controls to cycle through the series/season playlist. Skip forward/backward one episode.</li>
+					<li>Added keybinds to skip forward/backward. Left/Right skips +/-10s, and Up/Down skips +/-30s</li>
+					<li>Added keybind to stop the video playback. Press X to stop playback.</li>
+				</ul></p>
+				<div class="timestamp">
+					&nbsp;05/24/16 - 07:13 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Updated Web Client</span>
+				<p class="newsBody">We have added a Next Up section to the series view. If you are browsing a series that you are currently watching, the next episode will be highlighted at the top of the page below the item details.</p>
+				<div class="timestamp">
+					&nbsp;05/18/16 - 04:44 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Server Downtime</span>
+				<p class="newsBody">We're almost done the complete server rollback. The only significant thing that is missing now is the Music section which will be added in due time. Today the server will be offline for a short period of time to test a new update and features. The new server update will not go live until we decide that it is stable. Thanks for your patience.</p>
+				<div class="timestamp">
+					&nbsp;05/06/16 - 12:46 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Server Rollback</span>
+				<p class="newsBody">We are attempting to rollback the server to a place where it was more stable, with less issues accessing and playing media. We are backing up the current installation and user settings so that we can hopefully migrate the existing user data to the new installation. We will keep you posted about the progress and any relevant information once it is complete. Until then the server will be inaccessible. Sorry for the inconvenience.</p>
+				<div class="timestamp">
+					&nbsp;05/01/16 - 02:12 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Web Client Instability</span>
+				<p class="newsBody">We have noticed that the web client performance has been down after the recent server updates. We will attempt a server rollback later tonight in an attempt to resolve the slowness when loading pages and media. This will mean that we will be running an older server version, and as a result we may lose some functionality. We'll keep you posted on when and if this happens, and the final outcome either way.</p>
+				<div class="timestamp">
+					&nbsp;04/30/16 - 05:51 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Web Player Issues</span>
+				<p class="newsBody">We are experiencing technical difficulties with our web player. Please stand by while we troubleshoot the issues, we hope to have them resolved shortly. Thanks for your patience.</p>
+				<div class="timestamp">
+					&nbsp;04/27/16 - 05:24 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Requests Fixed</span>
+				<p class="newsBody">We have fixed the issue preventing users from requesting movies. The feature is now back to working as intended. We are sorry for the inconvenience that this caused anyone while it was not working.</p>
+				<div class="timestamp">
+					&nbsp;04/26/16 - 07:01 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">User Registration</span>
+				<p class="newsBody">Today we are introducing a <a href="/register">registration feature</a> for new users. If you have a friend or family member that would like to use the service, they can register and use your account as a referral which will provide benefits for you down the line. There is now a button on the main login screen of <a href="/">www.kflixx.com</a> to access the Register page.</p>
+				<p class="newsBody">Once a registration is submitted it will take some time before it is approved. Each application is reviewed before the account will be granted access to the server. An e-mail will be sent to the account holder once it has been activated.</p>
+				<div class="timestamp">
+					&nbsp;04/21/16 - 12:55 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Server Update</span>
+				<p class="newsBody">Yep, another server update. We're adding a plugin to improve the performance for syncing data to Kodi when starting your Kodi client to get new data from the server. This should reduce the amount of time it takes new items to populate in the Kodi library that were added since you last used the Kodi app.</p>
+				<p class="newsBody">This was initially expected to take a short period of time, but is taking longer than anticipated. Please check back soon and hopefully the server will be online. Thanks for your patience.</p>
+				<div class="timestamp">
+					&nbsp;04/20/16 - 01:46 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Server Update</span>
+				<p class="newsBody">The server will be undergoing an update and may become unavailable for periods during the next hour or so. Thanks for your patience.</p>
+				<div class="timestamp">
+					&nbsp;04/19/16 - 11:02 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">kflixx.com</span>
+				<p class="newsBody">We have a new domain name! From now on, you'll be able to access the server from <a href="http://www.kflixx.com/">www.kflixx.com</a>. In addition, we are redirecting any requests coming through the old URLs to kflixx.com, but eventually we'll just be dropping those URLs forever, so please bookmark the new one!</p>
+				<p class="newsBody">Items on the server are still being refreshed from the update yesterday. More data will continue to be populated tonight into tomorrow, and hopefully everything will be done by end of day tomorrow.</p>
+				<div class="timestamp">
+					&nbsp;04/18/16 - 09:30 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Server Update</span>
+				<p class="newsBody">A new server update adds the auto-play feature for TV shows. The next episode will automatically auto-play after the current episode is complete. You can toggle this setting in the Playback Settings section of your user profile.</p>
+				<p class="newsBody">Some metadata is still being refreshed after the server update. During this time you may notice some missing data for some media items, please be patient while the remaining data is refreshed. Thanks for your understanding.</p>
+				<div class="timestamp">
+					&nbsp;04/17/16 - 07:15 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">Scheduled Maintenance</span>
+				<p class="newsBody">The server will be undergoing an update and may become unavailable for periods during the next couple of hours. Database and playback improvements are in store once the updated version is online. Thanks for your patience.</p>
+				<div class="timestamp">
+					&nbsp;04/17/16 - 05:39 AM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">New Feature: Requests!</span>
+				<p class="newsBody">A request feature has been added and can be accessed from the top navigation bar. It will open a new page with the requests interface. From there you can login with your kflixx username and submit requests for media you would like to see.</p>
+				<div class="timestamp">
+					&nbsp;04/15/16 - 11:56 PM
+				</div>
+			</div>
+			<div class="newsItem">
+				<span class="newsTitle">General Browsing Improvements</span>
+				<p class="newsBody">We've made some general improvements for the experience in the web browser. Users should no longer receive undesirable popup notifications when starting media playback, or when browsing a new section.</p>
+				<p class="newsBody">Additionally, the default tab for each library section has been changed to now show the full library content by default. Users can still navigate to the Suggestions tab by clicking it in the navigation bar.</p>
+				<div class="timestamp">
+					&nbsp;04/15/16 - 11:49 PM
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
